@@ -1,14 +1,31 @@
 #include "main.h"
-#include <unistd.h>
+
 
 /**
- * _putchar - writes the character c to the stdout
- * @c: The character to print
- * Return: 1 (Succes)
- * On error: -1 is returned and errno is set appropriately
+ * _strncat - concatenates two strings using at most n bytes from src
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ * Return: dest
  */
 
-int _putchar(char c)
+char *_strncat(char *dest, char *src, int n)
 {
-	return (write(1, $c, 1));
+	int i;
+	int j;
+
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
