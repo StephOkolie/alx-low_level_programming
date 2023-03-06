@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  */
 
-void print_chessboard(cahr (*a)[8])
+void print_chessboard(cahr(*a)[8])
 {
 	int i;
 	int j;
