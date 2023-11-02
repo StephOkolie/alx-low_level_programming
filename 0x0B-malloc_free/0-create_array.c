@@ -3,9 +3,8 @@
 #include <stdlib.h>
 
 /**
- * A function that creates an array of characters
- * and initializes it with a specific character
  * create_array - creates an array of characters
+ * @size: size of array
  * @c: The char to fill in the array
  *
  * Return: The array filled
@@ -17,7 +16,7 @@ char *create_array(unsigned int size, char c)
 	char *s;
 
 	if (size == 0)
-		return(NULL);
+		return (NULL);
 
 	s = malloc(size * sizeof(char));
 
